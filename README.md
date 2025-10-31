@@ -1,58 +1,15 @@
-# Introducing the World App – Mesa de Sinuca
+# Mesa de Sinuca 3D  
+Projeto de Computação Gráfica com Three.js que exibe uma mesa de sinuca em 3D com taco e bolas, incluindo uma animação inicial simples.  
 
-Computação Gráfica: Projeto modelo com Three.JS
+## Como Usar  
+1. Baixe este repositório e extraia o modelo GLTF do taco e das bolas de https://skfb.ly/6DqZE.  
+2. Coloque os arquivos extraídos na pasta `src/World/assets/models/pool_set/` (o arquivo `scene.gltf` deve estar nela). Caso não existam, serão usados placeholders.  
+3. Abra `index.html` com um servidor local (por exemplo, usando a extensão *Live Server* ou executando `python -m http.server`) para visualizar a cena no navegador.  
 
-Prof. Fahad Kalil
+## Funcionalidades  
+- Mesa de sinuca modelada em 3D com bordas e buracos.  
+- Integração de modelos GLTF ou placeholders para taco e bolas.  
+- Animação simples do taco atingindo a bola branca.  
 
-Cena 3D representando uma mesa de sinuca com taco e bolas. Inclui animação simples do taco e da bola branca simulando o início da partida.
-
----
-
-## Como usar os assets (GLTF)
-
-- Baixe o modelo do taco e bolas (GLTF): https://skfb.ly/6DqZE
-- Extraia os arquivos e coloque em:
-
-```
-src/World/assets/models/pool_set/
-```
-
-O código espera:
-
-```
-src/World/assets/models/pool_set/scene.gltf
-```
-
-Se os arquivos não estiverem presentes, o app usa placeholders para que a cena funcione mesmo assim.
-
-## Requisitos atendidos
-
-1. Modelo 3D GLTF do taco e bolas (ou placeholders).
-2. Mesa criada com retângulo plano (feltro + bordas).
-3. Animação do taco avançando e bola branca rolando até o triângulo.
-
-## Instalação
-
-### Clonar o projeto
-
-    git clone https://github.com/fahadkalil/Introducing_the_World_App.git
-
-### Para executar
-
-- Windows / Linux / MacOS
-
-  No terminal:
-
-  - Acessar a pasta do projeto
-          cd Introducing_the_World_App
-  - Executar o comando
-
-          python -m http.server -b 127.0.0.1 8000
-
-  - Acessar via navegador: [http://127.0.0.1:8000](http://127.0.0.1:8000)
-
-Opcional: pode usar a extensão Live Server no VS Code e abrir o `index.html`.
-
-### Para atualizar com novas modificações do repositório (na pasta do projeto)
-
-    git pull
+## Créditos  
+Projeto acadêmico para a disciplina de Computação Gráfica orientada pelo Prof. Fahad Kalil.
